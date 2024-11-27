@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>гадай число</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Угадай число</h1>
+        <p>Загадано число от 1 до 10. У вас есть 5 попыток, чтобы угадать его.</p>
+        
+        <div id="game" class="hidden"> <!-- Изначально скрыто -->
+            <input type="number" id="user-input" placeholder="Введите число от 1 до 10" min="1" max="10">
+            <button id="submit-guess">Отправить</button>
+            <p id="message"></p>
+            <p id="attempts"></p>
+        </div>
+        
+        <button id="start-game">Начать новую игру</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
